@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { GETMEMO } from '../integration';
+import { GETMEMO } from '../integration'; // Ensure correct import
 import NavBar from '../components/NavBar';
+import { ethers } from 'ethers'; // Import ethers for formatting Ether
 
 const GetMemo = () => {
   const [memos, setMemos] = useState([]);
